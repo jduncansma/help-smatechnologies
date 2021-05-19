@@ -2,7 +2,7 @@
 module.exports = {
   title: 'SMA Technologies Help',
   tagline: 'Product Directory',
-  url: 'https://help.smatechnologies.com',
+  url: 'http://sma-open-docs.azurewebsites.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -11,11 +11,16 @@ module.exports = {
   projectName: 'help-smatechnologies', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'SMA Technologies Help',
+      title: 'Help',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'SMA Technologies Help Logo',
         src: 'img/logo.svg',
       },
+      items: [
+        {to: '/docs', label: 'Docs', position: 'left'},
+        {to: '/training', label: 'Training', position: 'left'},
+        {to: '/support', label: 'Support', position: 'left'},
+      ]
     },
     footer: {
       style: 'dark',
