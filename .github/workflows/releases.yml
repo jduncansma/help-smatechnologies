@@ -14,7 +14,8 @@ jobs:
 
     steps:
       - name: Azure Container Registry Login
-        uses: Azure/docker-login@v1
+      - uses: actions/checkout@v2
+      - uses: Azure/docker-login@v1
         with:
           username: '${{ secrets.SMA_CONTAINER_REGISTRY_USER }}'
           password: '${{ secrets.SMA_CONTAINER_REGISTRY_PASS }}'
