@@ -4,7 +4,7 @@ module.exports = {
   tagline: 'Product Directory',
   url: 'http://sma-open-docs.azurewebsites.net',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'opcon-docs', // Usually your GitHub org/user name.
