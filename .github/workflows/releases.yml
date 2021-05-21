@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: release
 
 on:
@@ -11,10 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Azure Container Registry Login
-        uses: Azure/docker-login@v1
+      - uses: actions/checkout@v2
+      - uses: Azure/docker-login@v1
         with:
           username: '${{ secrets.SMA_CONTAINER_REGISTRY_USER }}'
           password: '${{ secrets.SMA_CONTAINER_REGISTRY_PASS }}'
