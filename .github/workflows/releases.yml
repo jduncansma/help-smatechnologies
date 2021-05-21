@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: release
+
+on:
+  release:
+    types: published
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Azure Container Registry Login
+        uses: Azure/docker-login@v1
+        with:
+          username: '${{ secrets.SMA_CONTAINER_REGISTRY_USER }}'
+          password: '${{ secrets.SMA_CONTAINER_REGISTRY_PASS }}'
+          login-server: '${{ secrets.SMA_CONTAINER_REGISTRY }}'
+      - run: |
+          docker build . -t ${{ secrets.SMA_CONTAINER_REGISTRY }}/helpsmatechnologies:latest
+          docker push ${{ secrets.SMA_CONTAINER_REGISTRY }}/helpsmatechnologies:latest
