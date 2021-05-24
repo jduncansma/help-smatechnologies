@@ -19,6 +19,7 @@ module.exports = {
       items: [
         {to: '/docs', label: 'Docs', position: 'left'},
         {to: '/training', label: 'Training', position: 'left'},
+        {to: '/support', label: 'Support', position: 'left'},
       ]
     },
     footer: {
