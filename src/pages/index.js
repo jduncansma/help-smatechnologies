@@ -16,8 +16,16 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to={`${siteConfig.url}/opcon/connectors/dna`}>
-            DNA Connector
+            to={`${siteConfig.url}/opcon/agents/java`}>
+            Java Agent
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to={`${siteConfig.url}/opcon/agents/microsoft`}>
+            Microsoft Agent
           </Link>
         </div>
         <br />
@@ -25,7 +33,39 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to={`${siteConfig.url}/opcon/core`}>
-            OpCon
+            OpCon (Under Construction)
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to={`${siteConfig.url}/opcon/agents/sap`}>
+            SAP Agent
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to={`${siteConfig.url}/opcon/agents/sapbw`}>
+            SAP BW Agent
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to={`${siteConfig.url}/opcon/agents/sql`}>
+            SQL Agent
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to={`${siteConfig.url}/opcon/agents/tuxedo-art`}>
+            Tuxedo ART Agent
           </Link>
         </div>
       </div>
